@@ -62,14 +62,11 @@
                         <li><a href="#section-industries" class="nav-link">Industries</a></li>
                         <li><a href="#section-blog" class="nav-link">Blog</a></li>
                         <li><a href="#section-contact" class="nav-link">Contact</a></li>
-                        @can('view', auth()->user())
-
-                        @endcan
-                        <li class="has-children">
+                        <li>
                         @guest
                             @if (Route::has('login'))
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                    <a class="nav-link" href="{{ route('login') }}">Sign in</a>
                                 </li>
                             @endif
                         @else
@@ -581,11 +578,11 @@
 
                     <div class="col-md-3">
                         <h2 class="footer-heading mb-4">Quick Links</h2>
-                        <ul class="list-unstyled">
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Services</a></li>
-                            <li><a href="#">Testimonials</a></li>
-                            <li><a href="#">Contact Us</a></li>
+                        <ul class="list-unstyled site-menu js-clone-nav mx-auto d-none d-lg-block navbar">
+                            <li><a href="#section-about" class="nav-link">About Us</a></li>
+                            <li><a href="#section-services" class="nav-link">Services</a></li>
+                            <li><a href="#section-industries" class="nav-link">Industries</a></li>
+                            <li><a href="#section-contact" class="nav-link">Contact Us</a></li>
                         </ul>
                     </div>
                     <div class="col-md-3">
