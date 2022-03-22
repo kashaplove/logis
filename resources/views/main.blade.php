@@ -72,7 +72,7 @@
                         @else
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    ADMIN
+                                    Roman
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
@@ -524,7 +524,7 @@
                     <a href="single.html"><img src="images/blog_1.jpg" alt="Image" class="img-fluid"></a>
                     <h2 class="font-size-regular"><a href="single.html">How Logistics Company Improve Spendings</a></h2>
                     <div class="meta mb-4">by Jed Wilson <span class="mx-2">&bullet;</span> Jan 18, 2019 <span
-                            class="mx-2">&bullet;</span> <a href="#">News</a></div>
+                            class="mx-2"></span></div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi nobis ea maiores sapiente
                         veritatis reprehenderit suscipit quaerat rerum voluptatibus a eius.</p>
                 </div>
@@ -534,7 +534,7 @@
                     <a href="single.html"><img src="images/blog_2.jpg" alt="Image" class="img-fluid"></a>
                     <h2 class="font-size-regular"><a href="single.html">How Logistics Company Improve Spendings</a></h2>
                     <div class="meta mb-4">by Jed Wilson <span class="mx-2">&bullet;</span> Jan 18, 2019 <span
-                            class="mx-2">&bullet;</span> <a href="#">News</a></div>
+                            class="mx-2"></span></div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi nobis ea maiores sapiente
                         veritatis reprehenderit suscipit quaerat rerum voluptatibus a eius.</p>
                 </div>
@@ -544,7 +544,7 @@
                     <a href="single.html"><img src="images/blog_3.jpg" alt="Image" class="img-fluid"></a>
                     <h2 class="font-size-regular"><a href="single.html">How Logistics Company Improve Spendings</a></h2>
                     <div class="meta mb-4">by Jed Wilson <span class="mx-2">&bullet;</span> Jan 18, 2019 <span
-                            class="mx-2">&bullet;</span> <a href="#">News</a></div>
+                            class="mx-2"></span></div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi nobis ea maiores sapiente
                         veritatis reprehenderit suscipit quaerat rerum voluptatibus a eius.</p>
                 </div>
@@ -578,11 +578,11 @@
 
                     <div class="col-md-3">
                         <h2 class="footer-heading mb-4">Quick Links</h2>
-                        <ul class="list-unstyled site-menu js-clone-nav mx-auto d-none d-lg-block navbar">
-                            <li><a href="#section-about" class="nav-link">About Us</a></li>
-                            <li><a href="#section-services" class="nav-link">Services</a></li>
-                            <li><a href="#section-industries" class="nav-link">Industries</a></li>
-                            <li><a href="#section-contact" class="nav-link">Contact Us</a></li>
+                        <ul class="list-unstyled">
+                            <li><a href="#section-about">About Us</a></li>
+                            <li><a href="#section-services">Services</a></li>
+                            <li><a href="#section-industries">Industries</a></li>
+                            <li><a href="#section-contact">Contact Us</a></li>
                         </ul>
                     </div>
                     <div class="col-md-3">

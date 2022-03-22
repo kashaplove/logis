@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>AdminLTE 3 | Dashboard</title>
 
     <!-- Google Font: Source Sans Pro -->
-    <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
-    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
     <!-- Ionicons -->
-    <link rel="stylesheet" href="{{ asset('https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css') }}">
     <!-- Tempusdominus Bootstrap 4 -->
     <link rel="stylesheet"
           href="{{ asset('plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css') }}">
@@ -26,6 +24,7 @@
     <link rel="stylesheet" href="{{ asset('plugins/daterangepicker/daterangepicker.css') }}">
     <!-- summernote -->
     <link rel="stylesheet" href="{{ asset('plugins/summernote/summernote-bs4.min.css') }}">
+
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
 <div class="wrapper">
@@ -65,7 +64,7 @@
                     <img src="{{ asset('images/person_4.jpg') }}" class="img-circle elevation-2" alt="User Image">
                 </div>
                 <div class="info">
-                    <a href="#" class="d-block">LOGIS Admin Panel</a>
+                    <a href="{{ route('admin.main') }}" class="d-block">LOGIS Admin Panel</a>
                 </div>
             </div>
 
@@ -97,6 +96,15 @@
                             </p>
                         </a>
                     </li>
+                    <li class="nav-item">
+                        <a href="{{ route('admin.post.index') }}" class="nav-link">
+                            <i class="nav-icon fas fa-feather"></i>
+                            <p>
+                                Посты
+                                <span class="badge badge-info right">{{ $posts->count() }}</span>
+                            </p>
+                        </a>
+                    </li>
                 </ul>
             </nav>
             <!-- /.sidebar-menu -->
@@ -107,23 +115,13 @@
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
         <!-- Content Header (Page header) -->
-        <div class="content-header">
-            <div class="container-fluid">
-                <div class="row mb-2">
-                    <div class="col-sm-6">
-                        <h1 class="m-0">Dashboard</h1>
-                    </div><!-- /.col -->
-                </div><!-- /.row -->
-            </div><!-- /.container-fluid -->
-        </div>
+
         <!-- /.content-header -->
 
         <!-- Main content -->
-        <section class="content">
-            <div class="container-fluid">
+
                 @yield('content')
-            </div><!-- /.container-fluid -->
-        </section>
+
         <!-- /.content -->
     </div>
     <!-- /.content-wrapper -->
@@ -171,5 +169,18 @@
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
 <script src="{{ asset('dist/js/pages/dashboard.js') }}"></script>
 <script src="https://kit.fontawesome.com/f2c5b7edc5.js" crossorigin="anonymous"></script>
+<style>
+    /* CSS */
+    .btn-circle {
+        width: 40px;
+        height: 40px;
+        border-radius: 35px;
+        text-align: center;
+        padding-left: 0;
+        padding-right: 0;
+        font-size: 16px;
+        white-space: normal; /* восстанавливаем свойству значение по умолчанию */
+    }
+</style>
 </body>
 </html>
